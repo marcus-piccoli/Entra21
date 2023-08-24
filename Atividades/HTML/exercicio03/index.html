@@ -25,7 +25,7 @@
         }
 
         .coluna1{
-            width: 50%;
+            width: 80%;
         }
 
         .coluna2{
@@ -48,13 +48,19 @@
             text-align: center;
             margin-bottom: 80px;
         }
+
+        .footer{
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
     </style>
   </head>
   <body>
     <!-- Cabeçalho do site -->
     <header>
         <h1 class="title">Progressive Rock Bunker</h1>
-        <h2 class="subTitle">Seleção das principais bandas de rock progressivo</h2>
+        <h2 class="subTitle">Uma introdução ao rock progressivo</h2>
     </header>
 
     <!-- Conteúdo principal do site -->
@@ -65,7 +71,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam assumenda saepe rerum sed eius, porro temporibus eaque neque praesentium quae. Explicabo quisquam tempore voluptate culpa error, quis distinctio illo.</p>
             </details>
             <div class="audioBlock">
-                <audio class="coluna1" controls autoplay loop muted controlsList="nodownload">
+                <audio class="coluna1" controls controlsList="nodownload">
                     <source src="/assets/audio/Genesis - Harold the barrel.mp3" type="audio/mpeg">
                 </audio>
                 <a class="coluna2" style="text-align:center" href="/assets/audio/Genesis - Harold the barrel.mp3" download>Baixar</a>
@@ -110,25 +116,34 @@
                 </audio>
                 <a class="coluna2" style="text-align:center" href="/assets/audio/Yes - Roundabout.mp3" download>Baixar</a>
             </div>
+            <script>
+                var audios = document.getElementsByTagName('audio');
+                for(var i = 0, len = audios.length; i < len;i++){
+                    audios[i].addEventListener('play', function(){
+                        pauseAll(this);
+                    });
+                }
+                function pauseAll(elem){
+                    for(var i = 0, len = audios.length; i < len;i++){
+                        if(audios[i] != elem) audios[i].pause();
+                    }
+                }
+            </script>
         </section>
 
         <div class="playList">
             <div>
-                <h3 style="text-align:center">Músicas de Rock Progressivo do Spotify:</h3>
+                <h3 style="text-align:center">Playlist de Rock Progressivo no Spotify:</h3>
             </div>
             <div>
-                <ul class="ulStyle" style="text-align:center">
-                    <li><a href="^1^">Pure Rock & Roll - playlist by Spotify</a></li>
-                    <li><a href="^2^">Top 1000 Classic Rock Songs Rock'n Roll America's - playlist by Fernando Brito</a></li>
-                    <li><a href="^3^">28 Great Rock'N Roll Songs Vol 2 – Compilation de Chuck Berry</a></li>
-                </ul>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6U7YflqS9WyaJse5H7dyee?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
         </div>
     </main>
 
     <!-- Rodapé do site -->
-    <footer>
-      <p style="text-align:center">Contato: classicprogrock@gmail.com</p>
+    <footer class="footer">
+      <p>Contato: classicprogrock@gmail.com</p>
     </footer>
   </body>
 </html>
