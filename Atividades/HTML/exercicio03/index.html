@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Meu Site de Música</title>
+    <style>
+
+        .ulStyle{
+            list-style-type:none;
+        }
+        .linha {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+
+        .audioBlock {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            margin-left: 30%;
+            margin-right: 30%;
+            margin-bottom: 30px;
+        }
+
+        .coluna1{
+            width: 50%;
+        }
+
+        .coluna2{
+            width: 20%;
+        }
+
+        .playList{
+            height: 100%;
+            align-items: center;
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+
+        .title{
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .subTitle{
+            text-align: center;
+            margin-bottom: 80px;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Cabeçalho do site -->
+    <header>
+        <h1 class="title">Progressive Rock Bunker</h1>
+        <h2 class="subTitle">Seleção das principais bandas de rock progressivo</h2>
+    </header>
+
+    <!-- Conteúdo principal do site -->
+    <main>
+        <section>
+            <details class="linha">
+                <summary>Genesis - Harold The Barrel</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam assumenda saepe rerum sed eius, porro temporibus eaque neque praesentium quae. Explicabo quisquam tempore voluptate culpa error, quis distinctio illo.</p>
+            </details>
+            <div class="audioBlock">
+                <audio class="coluna1" controls autoplay loop muted controlsList="nodownload">
+                    <source src="/assets/audio/Genesis - Harold the barrel.mp3" type="audio/mpeg">
+                </audio>
+                <a class="coluna2" style="text-align:center" href="/assets/audio/Genesis - Harold the barrel.mp3" download>Baixar</a>
+            </div>
+            <details class="linha">
+                <summary>King Crimson - 21st Century Schizoid Man</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam assumenda saepe rerum sed eius, porro temporibus eaque neque praesentium quae. Explicabo quisquam tempore voluptate culpa error, quis distinctio illo.</p>
+            </details>
+            <div class="audioBlock">
+                <audio class="coluna1" controls controlsList="nodownload">
+                    <source src="/assets/audio/King Crimson - 21st Century Schizoid Man Including Mirrors.mp3" type="audio/mpeg">
+                </audio>
+                <a class="coluna2" style="text-align:center" href="/assets/audio/King Crimson - 21st Century Schizoid Man Including Mirrors.mp3" download>Baixar</a>
+            </div>
+            <details class="linha">
+                <summary>Marillion - Bitter Suite</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam assumenda saepe rerum sed eius, porro temporibus eaque neque praesentium quae. Explicabo quisquam tempore voluptate culpa error, quis distinctio illo.</p>
+            </details>
+            <div class="audioBlock">
+                <audio class="coluna1" controls controlsList="nodownload">
+                    <source src="/assets/audio/Marillion - Bitter Suite.mp3" type="audio/mpeg">
+                </audio>
+                <a class="coluna2" style="text-align:center" href="/assets/audio/Marillion - Bitter Suite.mp3" download>Baixar</a>
+            </div>
+            <details class="linha">
+                <summary>Pink Floyd - Dogs</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam assumenda saepe rerum sed eius, porro temporibus eaque neque praesentium quae. Explicabo quisquam tempore voluptate culpa error, quis distinctio illo.</p>
+            </details>
+            <div class="audioBlock">
+                <audio class="coluna1" controls controlsList="nodownload">
+                    <source src="/assets/audio/Pink Floyd - Dogs.mp3" type="audio/mpeg">
+                </audio>
+                <a class="coluna2" style="text-align:center" href="/assets/audio/Pink Floyd - Dogs.mp3" download>Baixar</a>
+            </div>
+            <details class="linha">
+                <summary>Yes - Roundabout</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ullam assumenda saepe rerum sed eius, porro temporibus eaque neque praesentium quae. Explicabo quisquam tempore voluptate culpa error, quis distinctio illo.</p>
+            </details>
+            <div class="audioBlock">
+                <audio class="coluna1" controls controlsList="nodownload">
+                    <source src="/assets/audio/Yes - Roundabout.mp3" type="audio/mpeg">
+                </audio>
+                <a class="coluna2" style="text-align:center" href="/assets/audio/Yes - Roundabout.mp3" download>Baixar</a>
+            </div>
+        </section>
+
+        <div class="playList">
+            <div>
+                <h3 style="text-align:center">Músicas de Rock Progressivo do Spotify:</h3>
+            </div>
+            <div>
+                <ul class="ulStyle" style="text-align:center">
+                    <li><a href="^1^">Pure Rock & Roll - playlist by Spotify</a></li>
+                    <li><a href="^2^">Top 1000 Classic Rock Songs Rock'n Roll America's - playlist by Fernando Brito</a></li>
+                    <li><a href="^3^">28 Great Rock'N Roll Songs Vol 2 – Compilation de Chuck Berry</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé do site -->
+    <footer>
+      <p style="text-align:center">Contato: classicprogrock@gmail.com</p>
+    </footer>
+  </body>
+</html>
