@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Academy</title>
+    <link rel="icon" type="image/x-icon" href="assets/iconmonstr-dashboard-lined-240.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        /*CSS reset e definições globais*/
+        body,
+        h1,
+        p {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: var(--corFundo1);
+        }
+
+        /* Palheta de Cores */
+        :root {
+            --corPrincipal : #3b5998;
+            --corComplementar : #073d8f;
+            --corComplementar2 : rgb(26, 140, 233);
+            --corFundo1 : #fff;
+            --corFundo2 : #A8DADC;
+        }
+
+        /* Cabeçalho, Menu e Logo*/
+
+        .header {
+            background-color: var(--corFundo1);
+            margin: 0 200px 0 200px;
+            width: auto;
+        }
+
+        .navBar {
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo img {
+            width: 75px;
+            margin-left: 20px;
+        }
+
+        .menu {
+            margin-bottom: 100px;
+        }
+
+        .menu ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        .menu ul li {
+            margin-left: 15px;
+            font-size: 2em;
+        }
+
+        .linkMenu:link,
+        .linkMenu:visited {
+            color: var(--corComplementar);
+            text-decoration: none;
+            font-weight: 100;
+        }
+
+        .linkMenu:hover,
+        .linkMenu:active {
+            color: var(--corComplementar2);
+        }
+
+        /* Home */
+        .secPresentation {
+            display: flex;
+            height: 800px;
+            margin: 0 100px 0 100px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .presLeft {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: var(--corFundo2);
+            background-image: url("");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .presRight {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: var(--corComplementar);
+            background-image: url("");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Botões */
+
+        .botao {
+        }
+
+        .botao:link,
+        .botao:visited {
+            border: 1px solid var(--corPrincipal);
+            border-radius: 15px;
+            padding: 8px;
+            background-color: var(--corPrincipal);
+            color: var(--corNeutro1);
+            text-decoration: none;
+            font-weight: 500;
+            color: #fff;
+        }
+
+        .botao:hover,
+        .botao:active {
+            filter: drop-shadow(0 0 10px var(--corComplementar2));
+        }
+
+        .title {
+            display: block;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <nav id="idNav" class="navBar">
+            <div class="logo">
+                <img src="assets/Images/logo.png" alt="logo">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a class="linkMenu" href="#">Home</a></li>
+                    <li><a class="linkMenu" href="#">Curso</a></li>
+                    <li><a class="linkMenu" href="#">Depoimentos</a></li>
+                    <li><a class="linkMenu" href="#">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div id="presentation" class="secPresentation">
+                <div id="guitarClass" class="presLeft">
+                    <h1 class="title">Guitar Class</h1>
+                    <p><a id="Ct3Botão1" class="botao" href="099-Exemplo google calender.html">Agende uma Aula</a></p>
+                </div>
+                <div id="guitarCamp" class="presRight">
+                    <h1 class="title">Guitar Camp</h1>
+                    <p><a id="Ct3Botão1" class="botao" href="099-Exemplo google calender.html">Inscreva-se em uma turma</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
