@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "Permanent Marker";
+  src: url(./fonts/PermanentMarker.ttf) format("truetype"),
+    url(./fonts/PermanentMarker.woff) format("woff");
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+.title{
+  font-family: "Permanent Marker", cursive;
+  font-size: 100px;
+  line-height: 140px;
+  color: rgb(78, 53, 36);
+  text-transform: uppercase;
+  max-width: 1240px;
+  margin:auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  font-family: "Inter", sans-serif;
+  background: #eeeeee;
+}
+
+.header {
+  height: 100vh;
+  background-image: url(./images/Background.jpg);
+  background-position: center;
+  /* background-size: cover;*/
+  text-align: center;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5);*/
+  display: flex;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px auto 0px;
+}
+
+.card{
+  display: flex;
+  width: 700px;
+  height: 800px;
+  margin-bottom: 20px;
+  padding: 45px 45px 70px 45px;
+  box-shadow: 4px 4px 5px rgba(0, 132, 255 0.4);
+}
+
+.card1 {
+  background-image: url(./images/Auriculoterapia.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.card2 {
+  background-image: url(./images/Dry\ needling.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.card3 {
+  background-image: url(./images/Liberação\ miofascial.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.card4 {
+  background-image: url(./images/Quem\ sou.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.card_title{
+  font-family: "Permanent Marker", cursive;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card_image{
+  margin-bottom: auto;
+  height: 250px;
+  width: 250px;
+}
+
+.card_text{
+  margin-top: 300px;
+  font-size: 16px;
+  font-family: Verdana;
+}
+
+.footer {
+  display: flex;
+  min-height: 300px;
+  background-color: #000;
+}
+
+.footer-author{
+  font-size: 24px;
+  color: #fff;
+  margin: auto;
+}
